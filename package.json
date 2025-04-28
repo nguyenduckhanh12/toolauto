@@ -1,0 +1,24 @@
+{
+  "name": "auto-login-game",
+  "version": "1.0.0",
+  "description": "Auto login and claim rewards in game with GUI",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  },
+  "devDependencies": {
+    "electron": "^28.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.auto.login.game",
+    "productName": "AutoLoginGame",
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
